@@ -1,0 +1,406 @@
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * school-header.css 
+|==============================================================================
+*/
+
+  .school-hdr a {
+     text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+     .school-hdr {
+        background: none;
+     }
+  }
+
+  .school-hdr hr {
+     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+     height: 2px;
+     width: 60%;
+     border: none !important;
+     opacity: 1;
+  }
+
+  .school-hdr .header__bg-img {
+     overflow: hidden;
+     height: 100%;
+     opacity: .95;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: -1;
+  }
+
+  .school-hdr .header__side-img {
+     height: 150px;
+  }
+
+  @media (max-width:760px) {
+     .school-hdr-contact {
+        font-size: 1.1rem !important;
+     }
+  }
+
+  .school-hdr-contact {
+     font-size: .875rem;
+  }
+
+  @media (max-width:768px) {
+     /* goes to responsive.css*/
+  }
+
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * latest news 
+|==============================================================================
+*/
+.latest-news
+{
+-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25) !important;
+ }
+.latest-news marquee a{
+	margin-right:5rem;
+}
+.latest-news marquee a:before{
+content:'\261E';
+font-size:1.5rem;
+margin-right:.5rem;
+line-height:.8;
+}
+
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * slide-menu.css 
+|==============================================================================
+*/
+/* slide menu */
+.header__time {
+   overflow-x: hidden;
+   font-size: .9rem
+}
+
+.slide__menu-wrapper {
+   box-shadow: 0 2px 10px 2px hsla(0, 0%, 0%, 0.25)
+}
+
+.slide__menu {
+   padding: 0 26px !important
+}
+
+.slide__menu * {
+   box-sizing: border-box
+}
+
+a.slide__menu-item {
+   color: #fff;
+   padding: 5px 10px;
+   border-right: 1px solid #fff;
+   border-left: 1px solid #fff;
+   background: #1a237e;
+   text-decoration: none;
+}
+
+a.slide__menu-item:hover {
+   outline: 0
+}
+
+.slide__menu .slick-prev,
+.slide__menu .slick-next {
+   background: #DDD;
+   border: 0;
+   border-radius: none;
+   position: absolute;
+   transform: translateY(-50%);
+   top: 50%;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+   color: #fff;
+   opacity: .25;
+   background: transparent;
+   z-index: 400;
+   padding: 0 5px
+}
+
+.slide__menu .slick-prev {
+   left: 0
+}
+
+.slide__menu .slick-next {
+   right: 0
+}
+
+.slide__menu .slick-prev:hover,
+.slide__menu .slick-next:hover {
+   outline: 0;
+   opacity: .5
+}
+
+
+
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * slider-1.css 
+|==============================================================================
+*/
+/* style-1.css */
+@charset 'UTF-8';
+
+/* *************** Slider__1 ****************************************** */
+/* Slider */
+.slick-loading .slick-list {
+   background: #fff url('../../assets/vendor/slick/1.8.1/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+   font-family: 'slick';
+   font-weight: normal;
+   font-style: normal;
+   src: url('../assets/vendor/slick/1.8.1/fonts/slick.eot');
+   src: url('../assets/vendor/slick/1.8.1/fonts/slick.eot?#iefix') format('embedded-opentype'),
+      url('../assets/vendor/slick/1.8.1/fonts/slick.woff') format('woff'),
+      url('../assets/vendor/slick/1.8.1/fonts/slick.ttf') format('truetype'),
+      url('../assets/vendor/slick/1.8.1/fonts/slick.svg#slick') format('svg');
+}
+
+.slider__1-wrapper {
+   position: relative;
+}
+
+.slider__1 {
+   width: 100%;
+   position: relative;
+   background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)), url("./../../assets/img/web/nat-landscape2.jpg");
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+
+.slider__1 .slider__1-slide {
+   z-index: 2;
+}
+
+.slider__1-layer {
+   width: 100%;
+   height: 300px;
+   color: white;
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 25px;
+   background: transparent;
+   z-index: ;
+   text-align: center;
+}
+
+.slider__1 .slider__1-layer * {
+   z-index: 6;
+}
+
+
+/* ----- slider__1 progress ----- */
+.slider__1-progress {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 4.5px;
+   background: rgba(0, 0, 0, .25);
+}
+
+.slider__1-progressbar {
+   width: 50%;
+   height: 4.5px;
+   border-radius: 5px;
+   background: linear-gradient(to right, hsla(0, 0%, 100%, 0.25), hsla(0, 0%, 100%, 0.75));
+}
+
+
+/* Dots */
+/* ----- slider__1 dots ------ */
+.slider__1 .slick-dots {
+   display: -webkit-box;
+   display: flex;
+   -webkit-box-pack: center;
+   justify-content: center;
+   list-style-type: none;
+   position: absolute;
+   bottom: 0px;
+   /* set position of dots */
+   width: 100%;
+   text-align: center;
+}
+
+.slider__1 .slick-dots li {
+   margin: 0 2px;
+   position: relative;
+   width: 30px;
+   height: 3px;
+   cursor: pointer;
+}
+
+.slider__1 .slick-dots button {
+   display: block;
+   width: 25px;
+   height: 2px;
+   padding: 0;
+   border: none;
+   /*background-color: hsla(0,0%,100%,0.4);*/
+   background-color: transparent;
+   transition: all .3s;
+   text-indent: -9999px;
+   cursor: pointer;
+   color: transparent;
+   outline: none;
+   background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+   outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+   opacity: 1;
+}
+
+.slick-dots li button:before {
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   width: 100%;
+   height: 100%;
+
+   content: '';
+   text-align: center;
+
+   opacity: .25;
+   color: black;
+   background: #fff;
+
+   box-shadow: 0 0 15px 2px #000;
+
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+   opacity: .75;
+   color: black;
+   background: #fff;
+}
+
+/* ----- //slider__1 dots ------ */
+
+
+
+
+
+
+
+
+
+
+/* Animation in slide contents */
+
+.slider__1 h1,
+.slider__1 h3,
+.slider__1 p {
+   animation: fadeOut .5s both;
+}
+
+.slider__1 .slick-active .sl__1 {
+   animation: fadeInLeft 1.5s both .5s;
+}
+
+.slider__1 .slick-active .sl__2 {
+   animation: fadeInRight 1.5s both 1s;
+}
+
+.slider__1 .slick-active .sl__3 {
+   animation: fadeInUp 1.5s both 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+|==============================================================================
+| * dir-msg.css 
+|==============================================================================
+*/
+.dir-msg {
+   position: relative;
+   padding-bottom: 90px;
+   padding-top: 80px;
+   z-index: 1;
+   font-size: 1.25rem;
+}
+
+.dir-img-bx {
+   width: 180px;
+   height: 225px;
+   overflow: hidden;
+   border-radius: 5px;
+   border: 5px solid;
+   border-color: lightgray;
+}
+
+.dir-img-bx img {
+   width: 100%;
+}
+
+.dir-msg:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 0 0 800px 550px;
+   transform: scaleX(1.5);
+   z-index: -1;
+   background: linear-gradient(to right bottom, white, #9ebfde);
+}
